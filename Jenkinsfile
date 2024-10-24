@@ -1,8 +1,5 @@
 pipeline {
     agent any
-    environment {
-        PASSWORD = credentials('session_password')
-    }
 
     stages {
         stage('Get the Code !') {
@@ -13,7 +10,7 @@ pipeline {
 
         stage('Setting permissions and running the script') {
             steps {
-                sh 'echo $PASSWORD | sudo -S chmod +x OSDetector.py'
+                sh 'chmod +x OSDetector.py'
                 sh 'python3 OSDetector.py'
             }
         }

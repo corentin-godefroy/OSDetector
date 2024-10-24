@@ -28,7 +28,7 @@ pipeline {
                     subject: 'Échec de la construction Jenkins',
                     body: emailBody,
                     recipientProviders: [[$class: 'CulpritsRecipientProvider']],
-                    to: 'cedsurq@protonmail.com'
+                    to: 'coco241200@gmail.com'
                 )
             }
         }

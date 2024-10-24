@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Get the Code !') {
             steps {
-                git branch: 'main', url: 'https://github.com/csurqunix/OSDetector.git'
+                git branch: 'main', url: 'https://github.com/corentin-godefroy/OSDetector'
             }
         }
 

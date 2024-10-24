@@ -13,8 +13,8 @@ pipeline {
                 withCredentials([string(credentialsId: 'session_password', variable: 'PASSWORD')]) 
                 {
                     sh 'echo ${PASSWORD} | sudo -S chmod +x OSDetector.py'
-                    sh 'python3 OSDetector.py'
                 }
+                sh 'python3 OSDetector.py'
             }
         }
 

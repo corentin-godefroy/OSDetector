@@ -10,7 +10,7 @@ pipeline {
 
         stage('Setting permissions and running the script') {
             steps {
-                sh 'chmod +x OSDetector.py'
+                sh 'sudo chmod +x OSDetector.py'
                 sh 'python3 OSDetector.py'
             }
         }
